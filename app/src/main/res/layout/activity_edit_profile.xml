@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.EditProfileActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueWhite"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editar_imgPerfil"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/padrao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textAlterarFoto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_perfil"
+            android:backgroundTint="@color/colorBlueWhite"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/editarFoto"
+            android:textColor="#0B1F91"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/editar_imgPerfil"
+            app:layout_constraintStart_toStartOf="@+id/editar_imgPerfil"
+            app:layout_constraintTop_toBottomOf="@+id/editar_imgPerfil" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editar_nomeUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_edit_text"
+                android:backgroundTint="@color/colorBlueWhite"
+                android:drawableStart="@drawable/baseline_person_24"
+
+                android:drawableTint="@color/colorSilver"
+                android:gravity="center"
+                android:hint="@string/nome_hint"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textColor="@color/purple_700" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/button_SalvarPerfil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editar_emailUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_edit_text"
+                android:backgroundTint="@color/colorBlueWhite"
+                android:drawableStart="@drawable/baseline_mark_email_read_24"
+                android:drawableTint="@color/colorSilver"
+                android:gravity="center"
+                android:hint="@string/e_mail_hint"
+                android:textColor="@color/purple_700" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_SalvarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/purple_200"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:onClick="clickBtnSalvarAlteracao"
+            android:text="@string/btnSalvar"
+            android:textColor="@color/colorBlueWhite"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="#9C27B0" />
+
+        <ProgressBar
+            android:id="@+id/progressBarImgPerfil"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/progressBarSearch"
+            app:layout_constraintBottom_toBottomOf="@+id/editar_imgPerfil"
+            app:layout_constraintEnd_toEndOf="@+id/editar_imgPerfil"
+            app:layout_constraintStart_toStartOf="@+id/editar_imgPerfil"
+            app:layout_constraintTop_toTopOf="@+id/editar_imgPerfil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

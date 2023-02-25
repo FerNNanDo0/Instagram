@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".navigation.PostagemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/abrirGaleria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Abrir Galeria"
+        android:textColor="@color/colorBlueWhite"
+        android:textStyle="bold|italic"
+        android:theme="@style/buttomPost" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/abrirCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Abrir Camera"
+        android:textColor="@color/colorBlueWhite"
+        android:textStyle="bold|italic"
+        android:theme="@style/buttomPost" />
+
+</LinearLayout>

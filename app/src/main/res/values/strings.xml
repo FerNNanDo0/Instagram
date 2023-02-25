@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="cadastre_se"><u>Cadastre-se</u></string>
+    <string name="entrar_btnLog">Entrar</string>
+    <string name="nome_hint">Nome</string>
+    <string name="cadastrar_txt_btn">Cadastrar</string>
+    <string name="senha_hint">Senha</string>
+    <string name="todo">TODO</string>
+    <string name="opc_sair">sair</string>
+    <string name="editarFoto">Editar Foto</string>
+    <string name="editarPerfil">Editar Perfil</string>
+    <string name="btnSalvar">Salvar Alterações</string>
+    <string name="txtcont">0</string>
+    <string name="txtPotst">Publicações</string>
+    <string name="txtSeguidores">Seguidores</string>
+    <string name="txtSeguindo">Seguindo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SeuNome">Seu Nome</string>
+    <string name="hintDesc">Descrição</string>
+</resources>

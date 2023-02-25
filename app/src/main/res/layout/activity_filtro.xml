@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    app:layout_gravity="center"
+    tools:context=".activity.FiltroActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <android.widget.ImageView
+            android:id="@+id/imageSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/padrao" />
+
+        <ProgressBar
+            android:id="@+id/progressBarFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/progressBar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:elevation="5dp"
+            android:padding="3dp"
+            android:textColorHint="@color/purple_210">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hintDesc" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFiltros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="3dp" />
+
+    </LinearLayout>
+</ScrollView>
